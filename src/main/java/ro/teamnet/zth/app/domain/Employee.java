@@ -31,10 +31,10 @@ public class Employee {
     private Integer jobId;
 
     @Column(name = "SALARY")
-    private BigDecimal salary;
+    private Integer salary;
 
-    @Column(name = "COMMISSION_PCT")
-    private BigDecimal commissionPct;
+    @Column(name = "COMISSION_PCT")
+    private Integer commissionPct;
 
     @Column(name = "MANAGER_ID")
     private Integer managerId;
@@ -98,19 +98,19 @@ public class Employee {
         this.jobId = jobId;
     }
 
-    public BigDecimal getSalary() {
+    public Integer getSalary() {
         return salary;
     }
 
-    public void setSalary(BigDecimal salary) {
+    public void setSalary(Integer salary) {
         this.salary = salary;
     }
 
-    public BigDecimal getCommissionPct() {
+    public Integer getCommissionPct() {
         return commissionPct;
     }
 
-    public void setCommissionPct(BigDecimal commissionPct) {
+    public void setCommissionPct(Integer commissionPct) {
         this.commissionPct = commissionPct;
     }
 
